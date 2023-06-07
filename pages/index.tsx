@@ -15,10 +15,14 @@ export default function Home() {
 
 			<h1>Nextflix</h1>
 
-      {/* <NavBar /> */}
-      <Banner />
+			{/* <NavBar /> */}
+			<Banner
+				title={'Clifford the red dog'}
+				subTitle={'a very cute dog'}
+				imgUrl={'https://riecks-filmkritiken.de/wp-content/uploads/2021/11/CLIF-FF-032_31R2K.webp'}
+			/>
 
-      {/* <Card />  */}
+			{/* <Card />  */}
 		</div>
 	);
 }
