@@ -6,14 +6,15 @@ interface BannerInfo {
 	title: string;
 	subTitle: string;
 	imgUrl: string;
+    videoId: string;
 }
 
 export default function Banner(props: BannerInfo) {
-	const { title, subTitle, imgUrl } = props;
+	const { title, subTitle, imgUrl, videoId } = props;
   const router = useRouter();
 
   const handleOnPlay = () => {
-    // router.push(`video/${videoId}`);
+    router.push(`video/${videoId}`);
   };
   return (
     <div className={styles.container}>
