@@ -10,7 +10,7 @@ interface CardProps {
 	imgUrl: string;
 	size: 'large' | 'medium' | 'small';
 	id: number;
-	shouldScale: boolean;
+	shouldScale?: boolean;
 }
 
 const Card = (props: CardProps) => {
@@ -49,7 +49,7 @@ const Card = (props: CardProps) => {
 				<Image
 					src={imgSrc}
 					alt='image'
-					layout='fill'
+					fill={true}
 					onError={handleOnError}
 					className={styles.cardImg}
 				/>
@@ -58,4 +58,5 @@ const Card = (props: CardProps) => {
 	);
 };
 
+12;
 export default Card;
