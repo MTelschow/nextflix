@@ -4,16 +4,16 @@ import clsx from 'classnames';
 import styles from './section-cards.module.css';
 
 interface Video {
-  id: string,
-  imgUrl: string
+	id: string;
+	imgUrl: string;
 }
 
 interface SectionCardProps {
 	title: string;
 	videos: Video[];
 	size: 'large' | 'medium' | 'small';
-	shouldScale: boolean;
-	shouldWrap: boolean;
+	shouldScale?: boolean;
+	shouldWrap?: boolean;
 }
 
 const SectionCards = (props: SectionCardProps) => {
@@ -25,14 +25,12 @@ const SectionCards = (props: SectionCardProps) => {
 				{videos.map((video, idx) => {
 					return (
 						<Link href={`/video/${video.id}`} key={video.id}>
-							<a>
-								<Card
-									id={idx}
-									imgUrl={video.imgUrl}
-									size={size}
-									shouldScale={shouldScale}
-								/>
-							</a>
+							<Card
+								id={idx}
+								imgUrl={video.imgUrl}
+								size={size}
+								shouldScale={shouldScale}
+							/>
 						</Link>
 					);
 				})}
