@@ -3,8 +3,16 @@ import styles from '@/styles/Home.module.css';
 
 import Banner from '@/components/banner/banner';
 import NavBar from '@/components/nav/navbar';
+import SectionCards from '@/components/card/section-cards';
 
 export default function Home() {
+	const disneyVideos = [
+		{
+			id: '12',
+			imgUrl: '/static/clifford.webp',
+		},
+	];
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -15,17 +23,17 @@ export default function Home() {
 			</Head>
 
 			<div className={styles.main}>
-        <NavBar />
-        <Banner
-          videoId="4zH5iYM4wJo"
-          title="Clifford the red dog"
-          subTitle="a very cute dog"
-          imgUrl="/static/clifford.webp"
-        />
+				<NavBar />
+				<Banner
+					videoId='4zH5iYM4wJo'
+					title='Clifford the red dog'
+					subTitle='a very cute dog'
+					imgUrl='/static/clifford.webp'
+				/>
 
-        {/* <div className={styles.sectionWrapper}>
-          <SectionCards title="Disney" videos={disneyVideos} size="large" />
-          <SectionCards
+				<div className={styles.sectionWrapper}>
+					<SectionCards title='Disney' videos={disneyVideos} size='large' />
+					{/* <SectionCards
             title="Watch it again"
             videos={watchItAgainVideos}
             size="small"
@@ -36,10 +44,9 @@ export default function Home() {
             videos={productivityVideos}
             size="medium"
           />
-          <SectionCards title="Popular" videos={popularVideos} size="small" />
-        </div> */}
-      </div>
-
+          <SectionCards title="Popular" videos={popularVideos} size="small" /> */}
+				</div>
+			</div>
 		</div>
 	);
 }
