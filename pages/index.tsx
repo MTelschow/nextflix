@@ -11,6 +11,8 @@ import {
 	getWatchItAgainVideos,
 } from '@/lib/videos';
 
+// import { redirectUser } from '../utils/redirectUser';
+
 interface Video {
 	id: string;
 	imgUrl: string;
@@ -31,11 +33,9 @@ export async function getServerSideProps(context: any) {
 	//     },
 	//   };
 	// }
-  
+
 	// Remove QUOTES once finished
 	const watchItAgainVideos = await getWatchItAgainVideos('userId', 'token');
-
-
 
 	const disneyVideos = await getVideos('disney trailer');
 	const productivityVideos = await getVideos('Productivity');
