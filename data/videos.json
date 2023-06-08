@@ -1,0 +1,625 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "87qXax-vKGSd0CZFs6tYV084VQY",
+    "nextPageToken": "CBIQAA",
+    "regionCode": "DE",
+    "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 18
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "pIs8kwAVa_NGxrGgPOt3bhoFmQQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "FB3ezPUaQjU"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-07T21:00:10Z",
+          "channelId": "UC_F4Iy5korq2mEWZDQhG07w",
+          "title": "EXPLORING ISLANDS IN FIJI AND SURFING CLOUDBREAK",
+          "description": "Go to our sponsor https://betterhelp.com/koa for 10% off your first month of therapy with BetterHelp and get matched with a ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/FB3ezPUaQjU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/FB3ezPUaQjU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/FB3ezPUaQjU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Koa Rothman",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-07T21:00:10Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "cGX3mj8QX2J1m8LYAdidu4_5-Wc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "V_c3lQC0CMw"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-07T23:33:02Z",
+          "channelId": "UCLdPicN16eAKPKir8EY1UXQ",
+          "title": "Can you still have a good time in Bali? | SURF TRIP 2023",
+          "description": "Get an exclusive Surfshark deal! Enter promo code BROCCOLI for an extra 3 months free at https://surfshark.deals/BROCCOLI ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/V_c3lQC0CMw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/V_c3lQC0CMw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/V_c3lQC0CMw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Kale Brock",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-07T23:33:02Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "sqN9fjPp1ZkyCLWrZV3exYj5hyQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "b7Pl5Rr8ZYk"
+        },
+        "snippet": {
+          "publishedAt": "2023-02-01T19:14:10Z",
+          "channelId": "UC--3c8RqSfAqYBdDjIG3UNA",
+          "title": "The BEST of Surfing in 2022",
+          "description": "What a year. 2022 was packed to the gills with everything the surfing world has to offer. Whether it be seemingly endless historic ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/b7Pl5Rr8ZYk/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/b7Pl5Rr8ZYk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/b7Pl5Rr8ZYk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Red Bull Surfing",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-02-01T19:14:10Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "8az_BPeqQZFRyYzQAelOxhgfmrc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "ma67yOdMQfs"
+        },
+        "snippet": {
+          "publishedAt": "2021-01-23T17:00:15Z",
+          "channelId": "UC--3c8RqSfAqYBdDjIG3UNA",
+          "title": "These Were The All-Time Surfing Moments Of The Year | Best Of 2020",
+          "description": "Well, that was a weird ride. Though it hasn't been easy, at least when we fixed our gaze on the ocean — or favorite place in the ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ma67yOdMQfs/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ma67yOdMQfs/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ma67yOdMQfs/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Red Bull Surfing",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-01-23T17:00:15Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "f1Fc94uJKvzXIojSmenFDP1ct_8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "pmlzdeZuAk8"
+        },
+        "snippet": {
+          "publishedAt": "2021-02-27T14:28:13Z",
+          "channelId": "UCxkIzPnPzWLz4IeuxIROflg",
+          "title": "What Surfing Is ACTUALLY Like as a Beginner",
+          "description": "See what it's actually like to surf as a beginner, including why it's fun and why it kind of sucks at times! Click below to join the ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/pmlzdeZuAk8/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/pmlzdeZuAk8/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/pmlzdeZuAk8/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Travis Marziani",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-02-27T14:28:13Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "0Pzg72U2q9hgUQ0oiVoc2UQib_8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "zAwCBD2VXMI"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-05T19:00:32Z",
+          "channelId": "UCo_q6aOlvPH7M-j_XGWVgXg",
+          "title": "SURFING THE BEST BEACH BREAK IN MEXICO",
+          "description": "STAY PSYCHED MERCHANDISE: https://staypsyched.com - JAMIE O'BRIEN SURF SCHOOL TURTLE BAY HAWAII ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/zAwCBD2VXMI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/zAwCBD2VXMI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/zAwCBD2VXMI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Jamie O'Brien",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-05T19:00:32Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "qdQ3uKysiSdhpGYUbWQLUOkB5LY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "zZqxPozl2Ec"
+        },
+        "snippet": {
+          "publishedAt": "2023-01-24T07:00:09Z",
+          "channelId": "UCEUYW6zm6KnUxPcwY1D8HsQ",
+          "title": "Surfing Massive Waves Waimea Bay (Jan 22, 2023)  4K",
+          "description": "What occurred on January 22, 2023, at Waimea Bay on the North Shore of Oahu is nothing short of historical. We're simply doing ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/zZqxPozl2Ec/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/zZqxPozl2Ec/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/zZqxPozl2Ec/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Eimy’s Hawaii Happy life 🏄🏻",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-01-24T07:00:09Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "BN0o3fMNk533NyXTB_8p7GvWnwU",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "eSWST13stO4"
+        },
+        "snippet": {
+          "publishedAt": "2022-03-27T15:00:32Z",
+          "channelId": "UCVo06dBGK9VBBhq15wJxZHQ",
+          "title": "🔵4k (ASMR) 10 Hour Store Loop - Hawaii Surfing - With Relaxing Music☑️",
+          "description": "Waves of the World Filmers: Chris Kincade: https://www.instagram.com/chriskincade.wotw Andre Botha: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/eSWST13stO4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/eSWST13stO4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/eSWST13stO4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Waves of the World",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-03-27T15:00:32Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "zTRjt_YGXrnt24iKcJH3cO4FXqE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "SuaWJVjbKsU"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-08T00:20:09Z",
+          "channelId": "UCZhixj2QS9WzrluwSc9iCzA",
+          "title": "Finals - 2023 Surf City El Salvador ISA World Surfing Games",
+          "description": "ISASURFING Subscribe to our Youtube channel to watch all the World Surfing Championships live, highlights, Interviews and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/SuaWJVjbKsU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/SuaWJVjbKsU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/SuaWJVjbKsU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "ISAsurfing",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-08T00:20:09Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "T0yTjS3fKjU5PnxXjTcTLT0BeYo",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "xtHZKToMvus"
+        },
+        "snippet": {
+          "publishedAt": "2022-11-02T17:46:49Z",
+          "channelId": "UCTYHNSWYy4jCSCj1Q1Fq0ew",
+          "title": "Interlusion | A Billabong Surf Film Shot in the Mentawai Islands",
+          "description": "Welcome to the Interlusion. What happens when the best surf trip of former world champ Joel Parkinson's life happens years after ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/xtHZKToMvus/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/xtHZKToMvus/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/xtHZKToMvus/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Billabong",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-11-02T17:46:49Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "VDNQZ7SopXZRZSxRxfnhD4O7pQs",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "OHaKUMtxGTU"
+        },
+        "snippet": {
+          "publishedAt": "2023-01-11T09:44:18Z",
+          "channelId": "UCoicMEw3njXscfwHlaAJVcQ",
+          "title": "SURFING THE CLEAREST WAVES EVER!? (RAW POV) + TESTING SURF GEAR [PT.2]",
+          "description": "In today's video, I surf the CLEAREST WAVES I have ever surfed! I also test out all the gear @HoStevie got me for Christmas!",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/OHaKUMtxGTU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/OHaKUMtxGTU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/OHaKUMtxGTU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Surfing With Noz",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-01-11T09:44:18Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "qxgpyeCUaQy_NHkmOuDaCWYhuGA",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "v8sGQE3RfO4"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-07T19:10:11Z",
+          "channelId": "UChuLeaTGRcfzo0UjL-2qSbQ",
+          "title": "How Griffin Colapinto Seized The Yellow Jersey Before The Surf City El Salvador Pro pres by Corona",
+          "description": "Follow San Clemente's Griffin Colapinto's journey to acquiring the World #1 ranking and Yellow Jersey ahead of the 2023 Surf ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/v8sGQE3RfO4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/v8sGQE3RfO4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/v8sGQE3RfO4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "World Surf League",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-07T19:10:11Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "bO3FZP3zOM4-yp6UXBeh3gmaVxE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "rYzq1C-PThg"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-06T21:43:51Z",
+          "channelId": "UC6uX6GF5q2JxLjMkyivM2Og",
+          "title": "SHIPSTERNS BLUFF CHUNKY PADDLE SESSION SLAB TOUR PT 10",
+          "description": "YOUTUBE VIDS CONTINUE WEEKLY AS ALWAYS MY FRIENDS PLEASE SUBSCRIBE to help SUPPORT the channel!",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/rYzq1C-PThg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/rYzq1C-PThg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/rYzq1C-PThg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Nathan Florence",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-06T21:43:51Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "A61qROs3YR_Latc5rjtYVQE6nb4",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "ALRoebu0Rgs"
+        },
+        "snippet": {
+          "publishedAt": "2022-10-08T08:02:51Z",
+          "channelId": "UCgrzEQkzzbWl6Sx_8DD1jiQ",
+          "title": "What happened when I fall #surf #surfing #athlete #waves #surfers #skate #wsl #fit",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ALRoebu0Rgs/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ALRoebu0Rgs/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ALRoebu0Rgs/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Jake Abel",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-10-08T08:02:51Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "3JrUF_6RoU4oRmXbFaY2mYsCUDA",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "PAE08YQQvNw"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-08T04:44:09Z",
+          "channelId": "UCZhixj2QS9WzrluwSc9iCzA",
+          "title": "Highlights / Finals Day - 2023 Surf City El Salvador ISA World Surfing Games",
+          "description": "ISASURFING Subscribe to our Youtube channel to watch all the World Surfing Championships live, highlights, Interviews and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/PAE08YQQvNw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/PAE08YQQvNw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/PAE08YQQvNw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "ISAsurfing",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-08T04:44:09Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "lJFJVy3Ls0scrchSbPXxPXkyiyY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "YDopdrmfGSQ"
+        },
+        "snippet": {
+          "publishedAt": "2023-05-31T22:27:54Z",
+          "channelId": "UCf5CA0OsvhhU-6AcSjT1oKQ",
+          "title": "The Wedge - Biggest and Gnarliest Day of May Swell 2023! (RAW FOOTAGE)",
+          "description": "The biggest and gnarliest day of May 2023 swell at the Wedge! Raw footage all filmed on the morning of 5/18/2023. Surfers and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/YDopdrmfGSQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/YDopdrmfGSQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/YDopdrmfGSQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "BEEFS T.V.",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-05-31T22:27:54Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "9rbvyQv675vNp2kUmgK7zkWnSlQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "rj7xMBxd5iY"
+        },
+        "snippet": {
+          "publishedAt": "2017-11-12T11:09:52Z",
+          "channelId": "UCiiFGfvlKvX3uzMovO3unaw",
+          "title": "BIG WAVE SURFING COMPILATION 2017",
+          "description": "BIG WAVE SURFING COMPILATION 2017 ** REVISED **AMAZING FOOTAGE ** WITH 60-100FT- HUGE SURF Please ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/rj7xMBxd5iY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/rj7xMBxd5iY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/rj7xMBxd5iY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Absolutely Flawless",
+          "liveBroadcastContent": "none",
+          "publishTime": "2017-11-12T11:09:52Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "gpYKP5rmfu-DV1NTCIF83ojv4_s",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "o7lNtn-lkKo"
+        },
+        "snippet": {
+          "publishedAt": "2023-06-08T04:02:42Z",
+          "channelId": "UC--3c8RqSfAqYBdDjIG3UNA",
+          "title": "Surfing Half a Board at Punta Roca?",
+          "description": "What can't the guy do? Jack Robinson unfazed by a decent reduction in foam under his feet #JackRobinson #FreeSurfing.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/o7lNtn-lkKo/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/o7lNtn-lkKo/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/o7lNtn-lkKo/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Red Bull Surfing",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-06-08T04:02:42Z"
+        }
+      }
+    ]
+  }
+  
