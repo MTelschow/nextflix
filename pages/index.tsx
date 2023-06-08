@@ -31,10 +31,11 @@ export async function getServerSideProps(context: any) {
 	//     },
 	//   };
 	// }
-	// const watchItAgainVideos = await getWatchItAgainVideos(userId, token);
+  
+	// Remove QUOTES once finished
+	const watchItAgainVideos = await getWatchItAgainVideos('userId', 'token');
 
-	// Remove once finished
-	const watchItAgainVideos = await getVideos('demo');
+
 
 	const disneyVideos = await getVideos('disney trailer');
 	const productivityVideos = await getVideos('Productivity');

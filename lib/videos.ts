@@ -67,15 +67,7 @@ export const getYoutubeVideoById = (videoId: string) => {
 
 
 export const getWatchItAgainVideos = async (userId: any, token: any) => {
-	const videos = await getPopularVideos();
-	return (
-		videos?.map((video: { videoId: any }) => {
-			return {
-				id: video.videoId,
-				imgUrl: `https://i.ytimg.com/vi/${video.videoId}/maxresdefault.jpg`,
-			};
-		}) || []
-	);
+	return await getVideos('watchItAgain')
 };
 
 // export const getWatchItAgainVideos = async (userId: any, token: any) => {
