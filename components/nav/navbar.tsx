@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 import { magic } from '../../lib/magic-client';
 
+
 const NavBar = () => {
 	const [showDropdown, setShowDropdown] = useState(false);
 	const [username, setUsername] = useState('');
@@ -47,21 +48,32 @@ const NavBar = () => {
 
 	const handleSignout = async (e: any) => {
 		e.preventDefault();
+		if (!magic) return;
 
+		//TODO
 		try {
-			const response = await fetch('/api/logout', {
-				method: 'POST',
-				headers: {
-					Authorization: `Bearer ${didToken}`,
-					'Content-Type': 'application/json',
-				},
-			});
-
-			const res = await response.json();
-		} catch (error) {
-			console.error('Error logging out', error);
+			await magic.user.logout();
+			// console.log(await magic.user.isLoggedIn());
+			router.push('/login');
+		} catch(error) {
+			console.error('Error retrieveing email', error);
 			router.push('/login');
 		}
+
+		// try {
+		// 	const response = await fetch('/api/logout', {
+		// 		method: 'POST',
+		// 		headers: {
+		// 			Authorization: `Bearer ${didToken}`,
+		// 			'Content-Type': 'application/json',
+		// 		},
+		// 	});
+
+		// 	const res = await response.json();
+		// } catch (error) {
+		// 	console.error('Error logging out', error);
+		// 	router.push('/login');
+		// }
 	};
 
 	return (
