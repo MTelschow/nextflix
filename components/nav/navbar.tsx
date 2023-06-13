@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// import { magic } from "../../lib/magic-client";
+import { magic } from '../../lib/magic-client';
 
 const NavBar = () => {
 	const [showDropdown, setShowDropdown] = useState(false);
@@ -13,21 +13,22 @@ const NavBar = () => {
 	const [didToken, setDidToken] = useState('');
 	const router = useRouter();
 
-	// useEffect(() => {
-	//   const applyUsernameInNav = async () => {
-	//     try {
-	//       const { email, issuer } = await magic.user.getMetadata();
-	//       const didToken = await magic.user.getIdToken();
-	//       if (email) {
-	//         setUsername(email);
-	//         setDidToken(didToken);
-	//       }
-	//     } catch (error) {
-	//       console.error("Error retrieving email", error);
-	//     }
-	//   };
-	//   applyUsernameInNav();
-	// }, []);
+	useEffect(() => {
+		const applyUsernameInNav = async () => {
+			try {
+				if (!magic) return;
+				const { email, issuer } = await magic.user.getMetadata();
+				const didToken = await magic.user.getIdToken();
+				if (email) {
+					setUsername(email);
+					setDidToken(didToken);
+				}
+			} catch (error) {
+				console.error('Error retrieving email', error);
+			}
+		};
+		applyUsernameInNav();
+	}, []);
 
 	const handleOnClickHome = (e: any) => {
 		e.preventDefault();
@@ -88,7 +89,7 @@ const NavBar = () => {
 				<nav className={styles.navContainer}>
 					<div>
 						<button className={styles.usernameBtn} onClick={handleShowDropdown}>
-							<p className={styles.username}>{'username'}</p>
+							<p className={styles.username}>{username}</p>
 							{/** Expand more icon */}
 							<Image
 								src={'/static/expand_more.svg'}

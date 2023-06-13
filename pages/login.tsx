@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// import { magic } from "../lib/magic-client";
+import { magic } from '../lib/magic-client';
 
 import styles from '../styles/Login.module.css';
 
@@ -14,69 +14,76 @@ const Login = () => {
 	const [userMsg, setUserMsg] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
 
-	//   const router = useRouter();
+	const router = useRouter();
 
-	//   useEffect(() => {
-	//     const handleComplete = () => {
-	//       setIsLoading(false);
-	//     };
-	//     router.events.on("routeChangeComplete", handleComplete);
-	//     router.events.on("routeChangeError", handleComplete);
+	useEffect(() => {
+		const handleComplete = () => {
+			setIsLoading(false);
+		};
+		router.events.on('routeChangeComplete', handleComplete);
+		router.events.on('routeChangeError', handleComplete);
 
-	//     return () => {
-	//       router.events.off("routeChangeComplete", handleComplete);
-	//       router.events.off("routeChangeError", handleComplete);
-	//     };
-	//   }, [router]);
+		return () => {
+			router.events.off('routeChangeComplete', handleComplete);
+			router.events.off('routeChangeError', handleComplete);
+		};
+	}, [router]);
 
 	const handleOnChangeEmail = (e: any) => {
 		setUserMsg('');
 		const email = e.target.value;
 		setEmail(email);
 	};
+	const validateEmail = (email: string) => {
+		return String(email)
+			.toLowerCase()
+			.match(
+				/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+			);
+	};
 
-	const handleLoginWithEmail = () => {};
+	const handleLoginWithEmail = async (e: any) => {
+		e.preventDefault();
 
-	//   const handleLoginWithEmail = async (e) => {
-	//     e.preventDefault();
+		if (validateEmail(email)) {
+			// log in a user by their email
+			try {
+				setIsLoading(true);
+				if (magic === false) return;
+				const didToken = await magic.auth.loginWithMagicLink({
+					email,
+				});
+				if (didToken) {
+					// TODO: remove this line
+					router.push('/');
 
-	//     if (email) {
-	//       // log in a user by their email
-	//       try {
-	//         setIsLoading(true);
+					// const response = await fetch('/api/login', {
+					// 	method: 'POST',
+					// 	headers: {
+					// 		Authorization: `Bearer ${didToken}`,
+					// 		'Content-Type': 'application/json',
+					// 	},
+					// });
 
-	//         const didToken = await magic.auth.loginWithMagicLink({
-	//           email,
-	//         });
-	//         if (didToken) {
-	//           const response = await fetch("/api/login", {
-	//             method: "POST",
-	//             headers: {
-	//               Authorization: `Bearer ${didToken}`,
-	//               "Content-Type": "application/json",
-	//             },
-	//           });
-
-	//           const loggedInResponse = await response.json();
-	//           if (loggedInResponse.done) {
-	//             router.push("/");
-	//           } else {
-	//             setIsLoading(false);
-	//             setUserMsg("Something went wrong logging in");
-	//           }
-	//         }
-	//       } catch (error) {
-	//         // Handle errors if required!
-	//         console.error("Something went wrong logging in", error);
-	//         setIsLoading(false);
-	//       }
-	//     } else {
-	//       // show user message
-	//       setIsLoading(false);
-	//       setUserMsg("Enter a valid email address");
-	//     }
-	//   };
-
+					// const loggedInResponse = await response.json();
+					// if (loggedInResponse.done) {
+					// 	router.push('/');
+					// } else {
+					// 	setIsLoading(false);
+					// 	setUserMsg('Something went wrong logging in');
+					// }
+				}
+			} catch (error) {
+				// Handle errors if required!
+				console.error('Something went wrong logging in', error);
+				setIsLoading(false);
+			}
+		} else {
+			// show user message
+			setIsLoading(false);
+			setUserMsg('Enter a valid email address');
+		}
+	};
 	return (
 		<div className={styles.container}>
 			<Head>
