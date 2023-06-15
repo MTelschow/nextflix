@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Modal from 'react-modal';
 import styles from '../../styles/Video.module.css';
 
@@ -102,6 +103,9 @@ const Video = ({ video }: { video: any }) => {
 
 	return (
 		<div className={styles.container}>
+			<Head>
+				<title>{title}</title>
+			</Head>
 			<NavBar />
 			<Modal
 				isOpen={true}
