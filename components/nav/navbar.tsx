@@ -60,6 +60,8 @@ const NavBar = () => {
 			router.push('/login');
 		}
 
+		// TODO
+
 		// try {
 		// 	const response = await fetch('/api/logout', {
 		// 		method: 'POST',
