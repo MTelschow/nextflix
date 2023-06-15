@@ -68,14 +68,16 @@ const NavBar = () => {
 		<div className={styles.container}>
 			<div className={styles.wrapper}>
 				<Link className={styles.logoLink} href='/'>
-					<div className={styles.logoWrapper}>
-						<Image
-							src='/static/netflix.svg'
-							alt='Netflix logo'
-							width='128'
-							height='34'
-						/>
-					</div>
+					<a>
+						<div className={styles.logoWrapper}>
+							<Image
+								src='/static/netflix.svg'
+								alt='Netflix logo'
+								width='128'
+								height='34'
+							/>
+						</div>
+					</a>
 				</Link>
 
 				<ul className={styles.navItems}>

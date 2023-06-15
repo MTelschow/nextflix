@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import {useRouter} from 'next/router';
-import styles from '@/components/banner/banner.module.css';
+import styles from '../../components/banner/banner.module.css';
 
 interface BannerInfo {
 	title: string;
