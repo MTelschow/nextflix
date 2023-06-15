@@ -29,7 +29,7 @@ const Login = () => {
 		};
 	}, [router]);
 
-	const handleOnChangeEmail = (e: any) => {
+	const handleOnChangeEmail = (e: { target: { value: any } }) => {
 		setUserMsg('');
 		const email = e.target.value;
 		setEmail(email);
@@ -42,37 +42,34 @@ const Login = () => {
 			);
 	};
 
-	const handleLoginWithEmail = async (e: any) => {
+	const handleLoginWithEmail = async (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 
 		if (validateEmail(email)) {
 			// log in a user by their email
 			try {
 				setIsLoading(true);
-				if (magic === false) return;
+
+				if (!magic) return;
 				const didToken = await magic.auth.loginWithMagicLink({
 					email,
 				});
 				if (didToken) {
-					
-					// TODO: remove this line
-					router.push('/');
+					const response = await fetch('/api/login', {
+						method: 'POST',
+						headers: {
+							Authorization: `Bearer ${didToken}`,
+							'Content-Type': 'application/json',
+						},
+					});
 
-					// const response = await fetch('/api/login', {
-					// 	method: 'POST',
-					// 	headers: {
-					// 		Authorization: `Bearer ${didToken}`,
-					// 		'Content-Type': 'application/json',
-					// 	},
-					// });
-
-					// const loggedInResponse = await response.json();
-					// if (loggedInResponse.done) {
-					// 	router.push('/');
-					// } else {
-					// 	setIsLoading(false);
-					// 	setUserMsg('Something went wrong logging in');
-					// }
+					const loggedInResponse = await response.json();
+					if (loggedInResponse.done) {
+						router.push('/');
+					} else {
+						setIsLoading(false);
+						setUserMsg('Something went wrong logging in');
+					}
 				}
 			} catch (error) {
 				// Handle errors if required!

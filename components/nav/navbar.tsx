@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 import { magic } from '../../lib/magic-client';
 
-
 const NavBar = () => {
 	const [showDropdown, setShowDropdown] = useState(false);
 	const [username, setUsername] = useState('');
@@ -31,51 +30,38 @@ const NavBar = () => {
 		applyUsernameInNav();
 	}, []);
 
-	const handleOnClickHome = (e: any) => {
+	const handleOnClickHome = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		router.push('/');
 	};
 
-	const handleOnClickMyList = (e: any) => {
+	const handleOnClickMyList = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		router.push('/browse/my-list');
 	};
 
-	const handleShowDropdown = (e: any) => {
+	const handleShowDropdown = (e: { preventDefault: () => void }) => {
 		e.preventDefault();
 		setShowDropdown(!showDropdown);
 	};
 
-	const handleSignout = async (e: any) => {
+	const handleSignout = async (e: { preventDefault: () => void }) => {
 		e.preventDefault();
-		if (!magic) return;
 
-		//TODO
 		try {
-			await magic.user.logout();
-			// console.log(await magic.user.isLoggedIn());
-			router.push('/login');
-		} catch(error) {
-			console.error('Error retrieveing email', error);
+			const response = await fetch('/api/logout', {
+				method: 'POST',
+				headers: {
+					Authorization: `Bearer ${didToken}`,
+					'Content-Type': 'application/json',
+				},
+			});
+
+			const res = await response.json();
+		} catch (error) {
+			console.error('Error logging out', error);
 			router.push('/login');
 		}
-
-		// TODO
-
-		// try {
-		// 	const response = await fetch('/api/logout', {
-		// 		method: 'POST',
-		// 		headers: {
-		// 			Authorization: `Bearer ${didToken}`,
-		// 			'Content-Type': 'application/json',
-		// 		},
-		// 	});
-
-		// 	const res = await response.json();
-		// } catch (error) {
-		// 	console.error('Error logging out', error);
-		// 	router.push('/login');
-		// }
 	};
 
 	return (
