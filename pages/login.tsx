@@ -54,6 +54,7 @@ const Login = () => {
 					email,
 				});
 				if (didToken) {
+					
 					// TODO: remove this line
 					router.push('/');
 
