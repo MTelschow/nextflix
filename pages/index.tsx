@@ -22,6 +22,9 @@ interface Libary {
 }
 
 export async function getServerSideProps(context: any) {
+
+	//TODO
+
 	// const { userId, token } = await redirectUser(context);
 
 	// if (!userId) {
@@ -67,6 +70,7 @@ export default function Home(props: Libary) {
 		<div className={styles.container}>
 			<Head>
 				<title>Nextflix</title>
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
 			</Head>
 
 			<div className={styles.main}>
