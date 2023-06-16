@@ -19,11 +19,11 @@ export default async function stats(req: NextApiRequest, resp: NextApiResponse) 
         const userId = await verifyToken(token);
         const findVideo = await findVideoIdByUser(token, userId, videoId);
         const doesStatsExist = findVideo?.length > 0;
-
+        
         if (req.method === "POST") {
           const { favourited, watched = true } = req.body;
           if (doesStatsExist) {
-            // update it
+            // update it  
             const response = await updateStats(token, {
               watched,
               userId,
@@ -49,6 +49,9 @@ export default async function stats(req: NextApiRequest, resp: NextApiResponse) 
             resp.send({ user: null, msg: "Video not found" });
           }
         }
+      }
+      else {
+        resp.send({msg: 'VideoId not provided'})
       }
     }
   } catch (error: any) {
