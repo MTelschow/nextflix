@@ -9,8 +9,8 @@ export default async function login(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
     try {
       const auth = req.headers.authorization;
-      const didToken = auth ? auth.substr(7) : "";
-
+      const didToken = auth ? auth.substring(7) : "";
+      
       const metadata = await magicAdmin.users.getMetadataByToken(didToken);
 
       const token = jwt.sign(
