@@ -13,7 +13,9 @@ import {
 } from '../lib/videos';
 import { redirectUser } from '../utils/redirectUser';
 
-export async function getServerSideProps(context: any) {
+export async function getServerSideProps(context: {
+	req: { cookies: { token: any } };
+}) {
 	const { userId, token } = await redirectUser(context);
 
 	if (!userId) {

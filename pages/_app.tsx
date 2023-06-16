@@ -13,7 +13,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	useEffect(() => {
 		const handleLoggedIn = async () => {
-			if (!magic) return;
 			const isLoggedIn = await magic.user.isLoggedIn();
 			if (isLoggedIn) {
 				// route to /
@@ -24,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			}
 		};
 		handleLoggedIn();
-	}, [router]);
+	}, []);
 
 	useEffect(() => {
 		const handleComplete = () => {

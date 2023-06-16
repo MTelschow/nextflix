@@ -50,11 +50,9 @@ const Login = () => {
 			try {
 				setIsLoading(true);
 
-				if (!magic) return;
 				const didToken = await magic.auth.loginWithMagicLink({
 					email,
 				});
-				console.log(didToken);
 				if (didToken) {
 					const response = await fetch('/api/login', {
 						method: 'POST',
@@ -65,15 +63,12 @@ const Login = () => {
 					});
 
 					const loggedInResponse = await response.json();
-					console.log(loggedInResponse);
 					if (loggedInResponse.done) {
 						router.push('/');
 					} else {
 						setIsLoading(false);
 						setUserMsg('Something went wrong logging in');
 					}
-				} else {
-					console.log("No didToken recieved");
 				}
 			} catch (error) {
 				// Handle errors if required!
