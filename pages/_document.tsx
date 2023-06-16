@@ -5,7 +5,7 @@ export default function Document() {
 		<Html>
 			<Head>
 				<meta name='description' content='YouTube streaming with next.js' />
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/Logo.svg' />
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link
 					rel='preconnect'
