@@ -68,18 +68,20 @@ export default function Home({
 
 				<div className={styles.sectionWrapper}>
 					<SectionCards title='Disney' videos={disneyVideos} size='large' />
-					<SectionCards
-						title='Watch it again'
-						videos={watchItAgainVideos}
-						size='small'
-					/>
-					<SectionCards title='Chess' videos={chessVideos} size='small' />
+					{watchItAgainVideos.length !== 0 && (
+						<SectionCards
+							title='Watch it again'
+							videos={watchItAgainVideos}
+							size='small'
+						/>
+					)}
+					<SectionCards title='Popular' videos={popularVideos} size='small' />
 					<SectionCards
 						title='Productivity'
 						videos={productivityVideos}
 						size='medium'
 					/>
-					<SectionCards title='Popular' videos={popularVideos} size='small' />
+					<SectionCards title='Chess' videos={chessVideos} size='small' />
 				</div>
 			</div>
 		</div>
