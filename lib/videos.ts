@@ -21,7 +21,7 @@ export const getCommonVideos = async (url: string) => {
       return [];
     }
 
-    return data?.items.map((item: { id: { videoId: any; }; snippet: any; statistics: any; }) => {
+    return data?.items.map((item: { id: { videoId: string; }; snippet: any; statistics: any; }) => {
       const id = item.id?.videoId || item.id;
       const snippet = item.snippet;
       return {
@@ -53,28 +53,28 @@ export const getPopularVideos = () => {
   return getCommonVideos(URL);
 };
 
-export const getYoutubeVideoById = (videoId: any) => {
+export const getYoutubeVideoById = (videoId: string) => {
   const URL = `videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}`;
 
   return getCommonVideos(URL);
 };
 
-export const getWatchItAgainVideos = async (userId: string, token: any) => {
+export const getWatchItAgainVideos = async (userId: string, token: string) => {
   const videos = await getWatchedVideos(userId, token);
   return (
-    videos?.map((video: { videoId: any; }) => {
+    videos?.map((video: { videoId: string; }) => {
       return {
         id: video.videoId,
         imgUrl: `https://i.ytimg.com/vi/${video.videoId}/maxresdefault.jpg`,
       };
-    }) || []
+    }).reverse()
   );
 };
 
-export const getMyList = async (userId: string, token: any) => {
+export const getMyList = async (userId: string, token: string) => {
   const videos = await getMyListVideos(userId, token);
   return (
-    videos?.map((video: { videoId: any; }) => {
+    videos?.map((video: { videoId: string; }) => {
       return {
         id: video.videoId,
         imgUrl: `https://i.ytimg.com/vi/${video.videoId}/maxresdefault.jpg`,
