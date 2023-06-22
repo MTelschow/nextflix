@@ -43,7 +43,7 @@ const Login = () => {
 	};
 
 	const handleLoginWithEmail = async (e: { preventDefault: () => void }) => {
-		e.preventDefault();
+		// e.preventDefault();
 
 		if (validateEmail(email)) {
 			// log in a user by their email
@@ -65,6 +65,7 @@ const Login = () => {
 					const loggedInResponse = await response.json();
 					if (loggedInResponse.done) {
 						router.push('/');
+						setUserMsg('');
 					} else {
 						setIsLoading(false);
 						setUserMsg('Something went wrong logging in');
