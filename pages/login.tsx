@@ -49,7 +49,7 @@ const Login = () => {
 			// log in a user by their email
 			try {
 				setIsLoading(true);
-
+				if (!magic) return;
 				const didToken = await magic.auth.loginWithMagicLink({
 					email,
 				});
